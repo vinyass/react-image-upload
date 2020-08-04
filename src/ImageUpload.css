@@ -1,0 +1,127 @@
+.container {
+    padding: 20px;
+}
+
+.container p {
+    color: red;
+    text-align: center;
+}
+
+.file-upload-btn {
+    color: white;
+    text-transform: uppercase;
+    outline: none;
+    background-color: #4aa1f3;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin-bottom: 5px;
+}
+
+.file-input {
+    display: none;
+}
+
+.drop-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 200px;
+    border: 4px dashed #4aa1f3;
+}
+
+.drop-container--over {
+    background-color: #fff;
+}
+
+.upload-icon {
+    width: 50px;
+    height: 50px;
+    background: url(./assets/upload.png) no-repeat center center;
+    background-size: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.drop-message {
+    text-align: center;
+    color: #4aa1f3;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.file-display-container {
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.file-status-bar {
+    margin-right: 10px;
+    position: relative;
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.file-preview {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.file-status-bar>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.file-name {
+    display: inline-block;
+    vertical-align: top;
+    color: #4aa1f3;
+}
+
+.file-error {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    color: #9aa9bb;
+}
+
+.file-error-message {
+    color: red;
+}
+
+.file-size {
+    display: inline-block;
+    vertical-align: top;
+    color: #30693D;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-left: 10px;
+    color: #444242;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.file-remove {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(145, 2, 2);
+}
+
+@media(max-width: 600px) {
+    .file-status-bar {
+        min-width: 100px;
+        max-width: 100px;
+    }
+    .file-preview {
+        height: 100px;
+    }
+}
